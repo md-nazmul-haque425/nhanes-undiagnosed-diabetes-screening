@@ -1,0 +1,14 @@
+2011-2012: participants 9756; adults 20+ 5560; pregnant 57; diagnosed 704; diabetes status unknown 5; treated without diagnosis 40; no HbA1c 466; analysed 4288
+2013-2014: participants 10175; adults 20+ 5769; pregnant 65; diagnosed 720; diabetes status unknown 3; treated without diagnosis 43; no HbA1c 331; analysed 4607
+2015-2016: participants 9971; adults 20+ 5719; pregnant 70; diagnosed 842; diabetes status unknown 3; treated without diagnosis 65; no HbA1c 445; analysed 4294
+2017-Mar2020: participants 15560; adults 20+ 9232; pregnant 87; diagnosed 1417; diabetes status unknown 5; treated without diagnosis 106; no HbA1c 973; analysed 6644
+2021-2023: participants 11933; adults 20+ 7809; pregnant 41; diagnosed 1070; diabetes status unknown 3; treated without diagnosis 114; no HbA1c 1755; analysed 4826
+development_2011_2016.csv: 13189 rows, 410 HbA1c cases
+validation_2017_2020.csv: 6644 rows, 237 HbA1c cases
+validation2_2021_2023.csv: 4826 rows, 128 HbA1c cases
+
+ADA Risk Test coding check (score >= 5), against Bang et al. 2009 (NHANES 1999-2004, FPG outcome): 35% referred, sensitivity 79%, specificity 67%.
+Development 2011-2016, HbA1c outcome, weighted: 40.4% referred, sensitivity 84.1%, specificity 60.5%
+Validation 2017-Mar 2020, HbA1c outcome, weighted: 43.5% referred, sensitivity 87.3%, specificity 57.5%
+Validation 2017-Mar 2020, HbA1c or FPG, weighted: 44.0% referred, sensitivity 86.6%, specificity 58.1%
+Interpretation: same direction and size as expected from older, heavier populations in later cycles; no sign of a coding error.

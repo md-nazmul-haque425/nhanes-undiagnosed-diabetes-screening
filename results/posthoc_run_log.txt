@@ -1,0 +1,15 @@
+[03:17:03] Reproduction check vs registered predictions: {"gb": 9.974659986866641e-17, "lr": 9.974659986866641e-17, "ada": 0.0, "fin": 0.0}
+[03:17:03] Registered H1 reproduced: missed GB 29, LR 30, ADA 36, FIN 40
+[03:17:03] P2 gb_vs_lr: diff +0.0024 CI -0.0038 to +0.0087, p 0.4419
+[03:17:03] P2 gb_vs_ada: diff +0.0528 CI +0.0318 to +0.0738, p 8.053e-07
+[03:17:03] P2 gb_vs_fin: diff +0.0264 CI +0.0080 to +0.0449, p 0.004861
+[03:17:03] P2 lr_vs_ada: diff +0.0504 CI +0.0296 to +0.0711, p 2.009e-06
+[03:17:03] P2 lr_vs_fin: diff +0.0240 CI +0.0054 to +0.0426, p 0.01158
+[03:17:03] P4 hba1c_or_fpg GB: Asian 4/30 vs White 6/59; diff +0.032 (-0.099 to +0.204)
+[03:17:03] P4 fpg_only_ge126 GB: Asian 2/24 vs White 5/54; diff -0.009 (-0.132 to +0.174)
+[03:17:03] P4 hba1c_only_ge6.5 GB: Asian 2/19 vs White 2/22; diff +0.014 (-0.188 to +0.233)
+[03:17:03] P1: refitting models without told_prediabetes on development
+[03:20:03] P1 missed: {"gb": 41, "lr": 34, "ada": 36, "fin": 40}; gb_vs_ada +0.021 (-0.017 to +0.063) p 0.405; gb_vs_fin +0.004 (-0.046 to +0.059) p 1.000; gb_vs_lr +0.030 (+0.000 to +0.068) p 0.143; lr_vs_ada -0.008 (-0.051 to +0.034) p 0.839; lr_vs_fin -0.025 (-0.076 to +0.021) p 0.405
+[03:20:03] P3: refitting models without changed items (activity, antihypertensive medication) and uncollected items
+[03:22:11] P3: missed GB 10 vs LR 8 of 128; diff +0.016 (+0.000 to +0.039), p 0.500; AUC GB 0.800 LR 0.799
+[03:22:11] done

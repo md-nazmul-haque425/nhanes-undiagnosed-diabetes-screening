@@ -1,0 +1,13 @@
+[05:05:13] Validation 2017-March 2020: 6644 participants, 237 cases
+[05:05:22] H1 FNR: Gradient boosting 0.122, Logistic regression 0.127, ADA Risk Test 0.152, Adapted FINDRISC 0.169 at referral 0.496
+[05:05:22]   GB vs ADA Risk Test: diff -0.030 CI -0.072 to +0.021; p 0.2810, Holm 0.5621
+[05:05:22]   GB vs Adapted FINDRISC: diff -0.046 CI -0.089 to +0.004; p 0.0708, Holm 0.2123
+[05:05:22]   GB vs Logistic regression: diff -0.004 CI -0.025 to +0.025; p 1.0000, Holm 1.0000
+[05:05:22] H2 validation: Gradient boosting sens 0.928 spec 0.388; Logistic regression sens 0.911 spec 0.429; ADA Risk Test sens 0.949 spec 0.352; Adapted FINDRISC sens 0.928 spec 0.370
+[05:05:50] Calibration GB: CITL -0.035, slope 1.023
+[05:05:56] H3 validation FNR Asian 0.278 (10/36) vs White 0.065; diff +0.213
+[05:06:01] H4 per 1000 tests: Gradient boosting 63.1, Logistic regression 62.8, ADA Risk Test 61.0, Adapted FINDRISC 58.9; universal 35.7
+[05:06:04] Robustness complete-case diffs: {"ada": -0.019, "fin": -0.058, "lr": -0.01}
+[05:06:06] SHAP top: age 0.539, waist_cm 0.359, told_prediabetes 0.217, family_history 0.194, bmi 0.181
+[05:06:06] E3: fitting reduced-predictor models on development
+[05:09:06] E3: FNR GB 0.117 vs LR 0.070

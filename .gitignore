@@ -1,0 +1,8 @@
+# Raw NHANES downloads (public; fetch with download_nhanes.ps1)
+*.xpt
+20*-20*/
+2017-Mar2020/
+# Python and temporary files
+__pycache__/
+*.pyc
+results/_dev_tmp/

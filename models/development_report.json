@@ -1,0 +1,277 @@
+{
+  "created": "2026-10-14 04:43",
+  "seed": 20261014,
+  "n": 13189,
+  "cases": 410,
+  "settings": {
+    "imputations": 10,
+    "chained_iterations": 10,
+    "pmm_donors": 5,
+    "xgb_configs": 50,
+    "inner_folds": 5,
+    "outer_folds": 5
+  },
+  "predictors": [
+    "age",
+    "male",
+    "bmi",
+    "waist_cm",
+    "hypertension_dx",
+    "bp_medication",
+    "family_history",
+    "gestational_diabetes",
+    "told_prediabetes",
+    "active_recreation",
+    "mvpa_min_week_total"
+  ],
+  "spline_knots": {
+    "age": [
+      25.0,
+      46.0,
+      73.0
+    ],
+    "bmi": [
+      21.3,
+      27.5,
+      37.3
+    ],
+    "waist_cm": [
+      78.5,
+      96.4,
+      118.5
+    ],
+    "log_mvpa": [
+      0.0,
+      5.081404364984463,
+      7.313886831633462
+    ]
+  },
+  "final_xgb_config": {
+    "n_estimators": 800,
+    "learning_rate": 0.017884761715513574,
+    "max_depth": 1,
+    "min_child_weight": 3.5211243008522515,
+    "subsample": 0.9554938565147799,
+    "colsample_bytree": 0.5342717135478905,
+    "reg_alpha": 0.5298393419672971,
+    "reg_lambda": 0.0015907268443948748
+  },
+  "final_range_extension": {
+    "hits": [
+      [
+        "max_depth",
+        "low"
+      ],
+      [
+        "reg_lambda",
+        "low"
+      ]
+    ],
+    "new_bounds": {
+      "max_depth": [
+        1,
+        6
+      ],
+      "reg_lambda": [
+        0.001,
+        100
+      ]
+    },
+    "improved": true
+  },
+  "lr_fallback_used": false,
+  "internal_performance_nested_cv": [
+    {
+      "model": "gradient_boosting",
+      "auc": 0.7757533796873299,
+      "brier": 0.029133668277829348
+    },
+    {
+      "model": "logistic_regression",
+      "auc": 0.7849205728147742,
+      "brier": 0.0290171603851029
+    },
+    {
+      "model": "ada_risk_test",
+      "auc": 0.7535581432189625,
+      "brier": null
+    },
+    {
+      "model": "adapted_findrisc",
+      "auc": 0.7522292671475115,
+      "brier": null
+    }
+  ],
+  "outer_folds": [
+    {
+      "fold": 1,
+      "best_config": {
+        "n_estimators": 644,
+        "learning_rate": 0.022811537197826182,
+        "max_depth": 1,
+        "min_child_weight": 2.034845872907131,
+        "subsample": 0.6769033967146882,
+        "colsample_bytree": 0.6316201822642179,
+        "reg_alpha": 0.4772501004811215,
+        "reg_lambda": 0.11398177474670212
+      },
+      "range_extension": {
+        "hits": [
+          [
+            "max_depth",
+            "low"
+          ],
+          [
+            "reg_lambda",
+            "low"
+          ]
+        ],
+        "new_bounds": {
+          "max_depth": [
+            1,
+            6
+          ],
+          "reg_lambda": [
+            0.001,
+            100
+          ]
+        },
+        "improved": true
+      },
+      "auc_gb": 0.7925779609908775,
+      "auc_lr": 0.8125500973319592,
+      "lr_fallback": false
+    },
+    {
+      "fold": 2,
+      "best_config": {
+        "n_estimators": 358,
+        "learning_rate": 0.03109756493103495,
+        "max_depth": 4,
+        "min_child_weight": 2.702502818015203,
+        "subsample": 0.7910909216396671,
+        "colsample_bytree": 0.5234609911701199,
+        "reg_alpha": 6.405059825846,
+        "reg_lambda": 43.975929109853325
+      },
+      "range_extension": {
+        "hits": [
+          [
+            "colsample_bytree",
+            "low"
+          ],
+          [
+            "reg_alpha",
+            "high"
+          ]
+        ],
+        "new_bounds": {
+          "colsample_bytree": [
+            0.25,
+            1.0
+          ],
+          "reg_alpha": [
+            0.001,
+            100
+          ]
+        },
+        "improved": false
+      },
+      "auc_gb": 0.7651866483453567,
+      "auc_lr": 0.7834459330508797,
+      "lr_fallback": false
+    },
+    {
+      "fold": 3,
+      "best_config": {
+        "n_estimators": 372,
+        "learning_rate": 0.012807427523441358,
+        "max_depth": 3,
+        "min_child_weight": 2.501978782855423,
+        "subsample": 0.806984532563705,
+        "colsample_bytree": 0.8513310473251385,
+        "reg_alpha": 0.01221491293947335,
+        "reg_lambda": 1.9164067917907415
+      },
+      "range_extension": null,
+      "auc_gb": 0.7676724302454293,
+      "auc_lr": 0.7682306576586893,
+      "lr_fallback": false
+    },
+    {
+      "fold": 4,
+      "best_config": {
+        "n_estimators": 111,
+        "learning_rate": 0.06172285085795724,
+        "max_depth": 2,
+        "min_child_weight": 3.8558159281370226,
+        "subsample": 0.8387438625706494,
+        "colsample_bytree": 0.976451378209754,
+        "reg_alpha": 0.06288068599191288,
+        "reg_lambda": 0.9543668699203606
+      },
+      "range_extension": {
+        "hits": [
+          [
+            "max_depth",
+            "low"
+          ],
+          [
+            "reg_lambda",
+            "low"
+          ]
+        ],
+        "new_bounds": {
+          "max_depth": [
+            1,
+            6
+          ],
+          "reg_lambda": [
+            0.001,
+            100
+          ]
+        },
+        "improved": true
+      },
+      "auc_gb": 0.7811199854956294,
+      "auc_lr": 0.7758454521164929,
+      "lr_fallback": false
+    },
+    {
+      "fold": 5,
+      "best_config": {
+        "n_estimators": 372,
+        "learning_rate": 0.012807427523441358,
+        "max_depth": 3,
+        "min_child_weight": 2.501978782855423,
+        "subsample": 0.806984532563705,
+        "colsample_bytree": 0.8513310473251385,
+        "reg_alpha": 0.01221491293947335,
+        "reg_lambda": 1.9164067917907415
+      },
+      "range_extension": null,
+      "auc_gb": 0.7791227149062097,
+      "auc_lr": 0.7886640255835043,
+      "lr_fallback": false
+    }
+  ],
+  "h2_locked_thresholds": {
+    "gradient_boosting": {
+      "threshold": 0.016423092598471422,
+      "dev_sensitivity": 0.9024390243902439
+    },
+    "logistic_regression": {
+      "threshold": 0.01705978926120118,
+      "dev_sensitivity": 0.9024390243902439
+    },
+    "ada_risk_test": {
+      "threshold": 4,
+      "dev_sensitivity": 0.9326829268292685
+    },
+    "adapted_findrisc": {
+      "threshold": 9,
+      "dev_sensitivity": 0.8960975609756099
+    }
+  },
+  "runtime_minutes": 21.7
+}

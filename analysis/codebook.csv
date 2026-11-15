@@ -1,0 +1,35 @@
+variable,description,NHANES source
+SEQN,NHANES participant ID,SEQN
+cycle,NHANES cycle,
+sample,development / validation / validation2,
+hba1c,HbA1c (%),LBXGH
+fpg,Fasting plasma glucose (mg/dL),LBXGLU
+y_hba1c,"Primary outcome: undiagnosed diabetes, HbA1c >= 6.5%",LBXGH
+in_fasting_subsample,1 if in morning fasting subsample with valid weight and FPG,"WTSAF2YR / WTSAFPRP, LBXGLU"
+y_hba1c_or_fpg,"Sensitivity outcome: HbA1c >= 6.5% or FPG >= 126 (fasting subsample only, else blank)","LBXGH, LBXGLU"
+age,Age in years (80 = 80+),RIDAGEYR
+male,"1 male, 0 female",RIAGENDR
+bmi,Body mass index (kg/m2),BMXBMI
+waist_cm,Waist circumference (cm),BMXWAIST
+hypertension_dx,Ever told high blood pressure,BPQ020
+bp_medication,Taking prescribed blood-pressure medication (0 if never told hypertension or never advised),BPQ040A/BPQ050A; BPQ150 in 2021-2023
+hypertension_ada,ADA item: diagnosed hypertension or BP medication,"BPQ020, BPQ050A/BPQ150"
+family_history,Close relative with diabetes (blank in 2021-2023: dropped),MCQ300C
+gestational_diabetes,Women: ever told diabetes in pregnancy (0 if never pregnant; men 0; blank in 2021-2023),"RHQ131, RHQ162"
+told_prediabetes,"Ever told prediabetes, or borderline diabetes (DIQ010 = 3)","DIQ160, DIQ010"
+high_glucose_history,FINDRISC item: prediabetes/borderline or gestational diabetes,"DIQ160, DIQ010, RHQ162"
+active_recreation,Any moderate or vigorous recreational activity,"PAQ650, PAQ665; PAD790-PAD820 in 2021-2023"
+mvpa_min_week_recreation,Recreational moderate + vigorous minutes per week,PAQ655 x PAD660 + PAQ670 x PAD675; PAD790/800/810/820
+mvpa_min_week_total,"Work + transport + recreation minutes per week, capped at 3360 (blank in 2021-2023)",PAQ605-PAD675
+sedentary_min_day,Sedentary minutes per day,PAD680
+race_eth,Race and ethnicity,RIDRETH3
+nh_asian,1 if non-Hispanic Asian,RIDRETH3 = 6
+education,"Education (adults 20+), 1-5",DMDEDUC2
+income_poverty_ratio,Family income to poverty ratio,INDFMPIR
+wt_mec,Exam weight for analysis (2011-2016 divided by 3),WTMEC2YR / WTMECPRP
+wt_fasting,Fasting subsample weight (2011-2016 divided by 3),WTSAF2YR / WTSAFPRP
+psu,Masked variance PSU,SDMVPSU
+strata,Masked variance stratum,SDMVSTRA
+ada_score,"ADA Risk Test, 0-11 (Bang 2009); blank in 2021-2023",derived
+ada_positive,ADA score >= 5,derived
+findrisc_adapted,"Adapted FINDRISC, 0-25 (fruit/vegetable item omitted; PA >= 210 min/week of work, transport and recreation); blank in 2021-2023",derived

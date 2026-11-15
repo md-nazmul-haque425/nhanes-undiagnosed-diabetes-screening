@@ -1,0 +1,16 @@
+[04:21:19] Development sample: 13189 participants, 410 cases (3.11%).
+[04:21:19] Missing items: bmi 1.0%, waist_cm 4.7%, mvpa_min_week_total 0.0%, hypertension_dx 0.1%, bp_medication 0.1%, family_history 1.9%, gestational_diabetes 6.2%, told_prediabetes 0.1%, active_recreation 0.0%
+[04:21:19] Outer fold 1/5: fitting (train 10551, test 2638)
+[04:24:51]   fold 1: AUC GB 0.793, LR 0.813; range extended: True
+[04:24:51] Outer fold 2/5: fitting (train 10551, test 2638)
+[04:28:40]   fold 2: AUC GB 0.765, LR 0.783; range extended: True
+[04:28:40] Outer fold 3/5: fitting (train 10551, test 2638)
+[04:31:42]   fold 3: AUC GB 0.768, LR 0.768; range extended: False
+[04:31:42] Outer fold 4/5: fitting (train 10551, test 2638)
+[04:35:27]   fold 4: AUC GB 0.781, LR 0.776; range extended: True
+[04:35:27] Outer fold 5/5: fitting (train 10552, test 2637)
+[04:38:29]   fold 5: AUC GB 0.779, LR 0.789; range extended: False
+[04:38:29] Internal (nested CV) AUC: gradient_boosting 0.776, logistic_regression 0.785, ada_risk_test 0.754, adapted_findrisc 0.752
+[04:38:29] H2 locked thresholds: {"gradient_boosting": {"threshold": 0.016423092598471422, "dev_sensitivity": 0.9024390243902439}, "logistic_regression": {"threshold": 0.01705978926120118, "dev_sensitivity": 0.9024390243902439}, "ada_risk_test": {"threshold": 4, "dev_sensitivity": 0.9326829268292685}, "adapted_findrisc": {"threshold": 9, "dev_sensitivity": 0.8960975609756099}}
+[04:38:29] Fitting final locked models on the full development sample
+[04:43:02] Final XGBoost configuration: {'n_estimators': 800, 'learning_rate': 0.017884761715513574, 'max_depth': 1, 'min_child_weight': 3.5211243008522515, 'subsample': 0.9554938565147799, 'colsample_bytree': 0.5342717135478905, 'reg_alpha': 0.5298393419672971, 'reg_lambda': 0.0015907268443948748}; range extension: {'hits': [('max_depth', 'low'), ('reg_lambda', 'low')], 'new_bounds': {'max_depth': [1, 6], 'reg_lambda': [0.001, 100]}, 'improved': True}

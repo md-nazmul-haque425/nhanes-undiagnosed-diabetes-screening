@@ -1,0 +1,51 @@
+cycle,file,contents,url
+2011-2012,DEMO_G,"Demographics, weights, ethnicity, pregnancy",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt
+2011-2012,GHB_G,HbA1c,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GHB_G.xpt
+2011-2012,GLU_G,Fasting glucose and fasting weights,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GLU_G.xpt
+2011-2012,DIQ_G,Diabetes questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.xpt
+2011-2012,BMX_G,Body measures,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt
+2011-2012,BPQ_G,Blood pressure questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt
+2011-2012,MCQ_G,Medical conditions (family history),https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt
+2011-2012,PAQ_G,Physical activity,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PAQ_G.xpt
+2011-2012,RHQ_G,Reproductive health,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/RHQ_G.xpt
+2011-2012,UCPREG_G,Urine pregnancy test,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/UCPREG_G.xpt
+2013-2014,DEMO_H,"Demographics, weights, ethnicity, pregnancy",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt
+2013-2014,GHB_H,HbA1c,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GHB_H.xpt
+2013-2014,GLU_H,Fasting glucose and fasting weights,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GLU_H.xpt
+2013-2014,DIQ_H,Diabetes questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DIQ_H.xpt
+2013-2014,BMX_H,Body measures,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt
+2013-2014,BPQ_H,Blood pressure questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt
+2013-2014,MCQ_H,Medical conditions (family history),https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.xpt
+2013-2014,PAQ_H,Physical activity,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/PAQ_H.xpt
+2013-2014,RHQ_H,Reproductive health,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/RHQ_H.xpt
+2013-2014,UCPREG_H,Urine pregnancy test,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/UCPREG_H.xpt
+2015-2016,DEMO_I,"Demographics, weights, ethnicity, pregnancy",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEMO_I.xpt
+2015-2016,GHB_I,HbA1c,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/GHB_I.xpt
+2015-2016,GLU_I,Fasting glucose and fasting weights,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/GLU_I.xpt
+2015-2016,DIQ_I,Diabetes questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DIQ_I.xpt
+2015-2016,BMX_I,Body measures,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.xpt
+2015-2016,BPQ_I,Blood pressure questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BPQ_I.xpt
+2015-2016,MCQ_I,Medical conditions (family history),https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/MCQ_I.xpt
+2015-2016,PAQ_I,Physical activity,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/PAQ_I.xpt
+2015-2016,RHQ_I,Reproductive health,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/RHQ_I.xpt
+2015-2016,UCPREG_I,Urine pregnancy test,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/UCPREG_I.xpt
+2017-Mar2020,P_DEMO,"Demographics, weights, ethnicity, pregnancy",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DEMO.xpt
+2017-Mar2020,P_GHB,HbA1c,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_GHB.xpt
+2017-Mar2020,P_GLU,Fasting glucose and fasting weights,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_GLU.xpt
+2017-Mar2020,P_DIQ,Diabetes questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_DIQ.xpt
+2017-Mar2020,P_BMX,Body measures,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_BMX.xpt
+2017-Mar2020,P_BPQ,Blood pressure questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_BPQ.xpt
+2017-Mar2020,P_MCQ,Medical conditions (family history),https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_MCQ.xpt
+2017-Mar2020,P_PAQ,Physical activity,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_PAQ.xpt
+2017-Mar2020,P_RHQ,Reproductive health,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_RHQ.xpt
+2017-Mar2020,P_UCPREG,Urine pregnancy test,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/P_UCPREG.xpt
+2021-2023,DEMO_L,"Demographics, weights, ethnicity, pregnancy",https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt
+2021-2023,GHB_L,HbA1c,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.xpt
+2021-2023,GLU_L,Fasting glucose and fasting weights,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GLU_L.xpt
+2021-2023,DIQ_L,Diabetes questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DIQ_L.xpt
+2021-2023,BMX_L,Body measures,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.xpt
+2021-2023,BPQ_L,Blood pressure questionnaire,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BPQ_L.xpt
+2021-2023,MCQ_L,Medical conditions (family history),https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/MCQ_L.xpt
+2021-2023,PAQ_L,Physical activity,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/PAQ_L.xpt
+2021-2023,RHQ_L,Reproductive health,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/RHQ_L.xpt
+2021-2023,UCPREG_L,Urine pregnancy test,https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/UCPREG_L.xpt

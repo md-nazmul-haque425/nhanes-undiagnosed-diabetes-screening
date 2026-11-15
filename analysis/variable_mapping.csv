@@ -1,0 +1,19 @@
+Predictor / role,"2011-2016 (_G, _H, _I)",2017-Mar 2020 (P_),2021-2023 (_L),Used in,Harmonisation rule
+Age,RIDAGEYR,RIDAGEYR,RIDAGEYR,"ADA, FINDRISC, ML",Continuous; score bands as published
+Sex,RIAGENDR,RIAGENDR,RIAGENDR,"ADA, ML","1 male, 2 female"
+BMI,BMXBMI,BMXBMI,BMXBMI,"ADA, FINDRISC, ML",Measured
+Waist circumference,BMXWAIST,BMXWAIST,BMXWAIST,"FINDRISC, ML","Measured, cm"
+Diagnosed hypertension,BPQ020,BPQ020,BPQ020,"ADA, ML",Yes = 1
+Blood-pressure medication,BPQ040A then BPQ050A,BPQ040A then BPQ050A,BPQ150,"ADA, FINDRISC, ML","""No"" if BPQ020 = 2 or BPQ040A = 2; BPQ150 replaces BPQ050A from 2021"
+Family history of diabetes,MCQ300C,MCQ300C,Dropped,"ADA, FINDRISC, ML",Close relative with diabetes; not available in 2021-2023
+Gestational diabetes (women),RHQ162 (if RHQ131 = 1),RHQ162 (if RHQ131 = 1),Dropped,ADA,"""No"" if never pregnant; not available in 2021-2023"
+Physical activity,"PAQ650 vigorous, PAQ665 moderate recreational","PAQ650, PAQ665","PAD790Q/U, PAD800 moderate; PAD810Q/U, PAD820 vigorous","ADA, FINDRISC, ML",Active = any moderate or vigorous recreational activity; 2021-2023 frequency > 0. FINDRISC 30 min/day not reproducible exactly
+Told prediabetes / high glucose,DIQ160,DIQ160,DIQ160,"FINDRISC, ML",Yes = 1
+Fruit and vegetable intake,Not collected as FINDRISC item,Not collected,Not collected,FINDRISC,Omitted: adapted FINDRISC
+Race and ethnicity,RIDRETH3,RIDRETH3,RIDRETH3,"Subgroups (H3, E1)","6 = NH Asian, 3 = NH White"
+Exclusion: pregnancy,RIDEXPRG,RIDEXPRG,RIDEXPRG,Eligibility,Exclude RIDEXPRG = 1
+Exclusion: diagnosed or treated diabetes,"DIQ010, DIQ050, DIQ070","DIQ010, DIQ050, DIQ070","DIQ010, DIQ050, DIQ070",Eligibility,Exclude any = 1
+Outcome,LBXGH (GHB),LBXGH (P_GHB),LBXGH (GHB_L),Primary outcome,HbA1c >= 6.5%
+Sensitivity outcome,LBXGLU (GLU),LBXGLU (P_GLU),LBXGLU (GLU_L),Sensitivity outcome,HbA1c >= 6.5% or FPG >= 126 mg/dL; fasting subsample
+Weights,"WTMEC2YR, WTSAF2YR","WTMECPRP, WTSAFPRP","WTMEC2YR, WTSAF2YR",Survey design,Divide 2-year weights by 3 when pooling 2011-2016
+Design,"SDMVPSU, SDMVSTRA","SDMVPSU, SDMVSTRA","SDMVPSU, SDMVSTRA",Survey design,Use as provided

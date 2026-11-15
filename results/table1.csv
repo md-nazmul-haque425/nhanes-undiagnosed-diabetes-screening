@@ -1,0 +1,17 @@
+,Development 2011-2016,Primary validation 2017-March 2020,Secondary validation 2021-2023
+n,"13,189","6,644","4,826"
+"Age, years, median (IQR)",46 (33-61),48 (34-63),55 (37-67)
+"Male, %",48.5,47.7,44.5
+"BMI, kg/m2, median (IQR)",27.5 (23.9-32.0),28.3 (24.5-33.1),27.9 (24.3-32.6)
+"Waist circumference, cm, median (IQR)",96.4 (86.2-107.1),97.8 (87.4-109.3),97.9 (87.7-109.1)
+"Hypertension diagnosis, %",31.4,32.9,32.0
+"Family history of diabetes, %",37.4,43.1,Not collected
+"Gestational diabetes, % of women",5.4,5.3,Not collected
+"Told prediabetes or borderline, %",8.9,14.4,17.0
+"Any recreational activity, %",51.3,50.0,79.7
+"Activity (total), min/week, median (IQR)",160 (0-560),225 (0-840),Not available
+"NH White / NH Black / NH Asian, %",39.3 / 21.1 / 12.7,35.8 / 25.4 / 12.2,60.9 / 11.0 / 5.6
+"Mexican American / Other Hispanic / Other, %",13.2 / 10.6 / 3.2,11.5 / 10.4 / 4.7,6.5 / 10.0 / 6.1
+"Undiagnosed diabetes (HbA1c >=6.5%), n (%)",410 (3.1),237 (3.6),128 (2.7)
+"Missing: waist / family history / BMI, n",624 / 257 / 137,275 / 86 / 94,192 / 4826 / 59
+"Missing gestational diabetes, n of women",824 of 6787,256 of 3473,2679 of 2679

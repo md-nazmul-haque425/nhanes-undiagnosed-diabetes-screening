@@ -2,7 +2,7 @@
 
 Code, locked models and results for the paper:
 
-> Haque MN, Ismail S, Husin HS, Talukder MGM, Ahmed AU, Noor NU, Hossain MA. *Gradient boosting, logistic regression and risk scores for detecting undiagnosed diabetes at a matched referral rate: development and preregistered temporal validation in a US national survey.* Submitted to *Informatics and Health*.
+> Haque MN, Ismail S, Husin HS, Talukder MGM, Ahmed AU, Noor NU, Hossain MA. *Gradient boosting, logistic regression and risk scores for detecting undiagnosed diabetes at a matched referral rate: development and preregistered temporal validation in a US national survey.* Manuscript for *Informatics and Health*.
 
 Preregistration: Open Science Framework, https://osf.io/w2hsa
 
@@ -35,14 +35,15 @@ pip install -r requirements.txt
 | Step | Command | Output | Paper |
 |---|---|---|---|
 | 1. Download NHANES files | `download_nhanes.ps1` (Windows) | one folder of `.xpt` files per cycle | |
-| 2. Build analysis files | `python scripts/build_analysis_dataset.py` | `analysis/` | Fig. 1, Table 1 |
+| 2. Build analysis files | `python scripts/build_analysis_dataset.py` | `analysis/` (participant counts in `analysis/build_log.txt`) | Fig. 1 |
+| 2b. Participant characteristics | `python scripts/table1.py` | `results/table1.csv` | Table 1 |
 | 3. Develop and lock models (development data only) | `python scripts/fit_development_models.py analysis/development_2011_2016.csv models` | `models/` | Appendix Tables A.1, A.2 |
 | 4. One-time validation | `python scripts/evaluate_validation.py analysis/development_2011_2016.csv analysis/validation_2017_2020.csv analysis/validation2_2021_2023.csv models results` | `results/` | Tables 2–5, Figs. 2–4, Appendix Tables A.4–A.6 |
 | 5. Logistic regression equation | `python scripts/lr_coef.py` | `results/lr_coefficients.csv`, `results/lr_knots.json` | Appendix Table A.3 |
 | 6. Post hoc analyses | `python scripts/posthoc_analyses.py analysis/development_2011_2016.csv analysis/validation_2017_2020.csv analysis/validation2_2021_2023.csv models results` | `results/posthoc_results.json` | Appendix Table A.7 |
 | 7. Manuscript figures | `python scripts/make_figures.py` and `python scripts/fig_a1.py` | `figures/` (300 dpi PNG and PDF) | Figs. 1–4, Fig. A.1 |
 
-Steps 2 to 4 take about 30 minutes on a laptop. The analysis files, locked models and results are already included, so steps 5 to 7 can run without repeating steps 1 to 4. Re-running step 3 or 4 overwrites the files in `models/` or `results/`.
+Steps 2 to 4 take about 30 minutes on a laptop. The analysis files, locked models and results are already included, so steps 2b and 5 to 7 can run without repeating steps 1 to 4. Re-running step 3 or 4 overwrites the files in `models/` or `results/`.
 
 ## Notes
 
